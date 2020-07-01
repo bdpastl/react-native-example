@@ -1,11 +1,14 @@
 import React from 'react'
-
+import { useParams } from 'react-router-dom'
 const PageWithParams = () => {
+
+const { thing } = useParams()
+console.log('PARAMS ARE: 💅🤷‍♀️', thing)
 
 
   return (
     <>
-      Ay! Its a Page with Params!!
+        The coolest noodle armed fighter in ssmb ultimate is : {thing}
     </>
   )
 }
